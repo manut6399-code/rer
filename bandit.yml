@@ -1,0 +1,8 @@
+# Bandit configuration for RepoRadar.
+# One reviewed exception only. Run: bandit -r src -q -c bandit.yml
+skips:
+  # B104 = hardcoded bind to all interfaces. The dashboard server is strictly
+  # read-only static files (no auth, no uploads, no dynamic endpoints) and must
+  # bind 0.0.0.0 to reach phones on the LAN and the Arena preview iframe.
+  # Users can pass `--host 127.0.0.1` to restrict it to localhost.
+  - B104

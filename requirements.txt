@@ -1,0 +1,12 @@
+# RepoRadar has ZERO runtime dependencies on purpose:
+#   - it runs on a stock Python 3.9+ install (desktop, server, Termux),
+#   - there is no third-party supply-chain surface to audit,
+#   - `python repodar.py run` needs no pip install at all.
+#
+# Optional DEVELOPMENT tools only (not imported by the application):
+#   pytest        - nicer test output (`python repodar.py selftest` needs nothing)
+#   ruff          - `ruff check src tests repodar.py`
+#   bandit        - `bandit -r src -q -c bandit.yml`
+#
+# Install them only if you want them:
+#   pip install -r requirements-dev.txt

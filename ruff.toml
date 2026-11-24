@@ -1,0 +1,16 @@
+# Reproducible lint config. py39 is the minimum supported runtime.
+target-version = "py39"
+line-length = 120
+
+[lint]
+select = ["E4", "E7", "E9", "F", "I", "B", "UP", "SIM"]
+ignore = [
+    "E501",    # long lines are common in embedded HTML/CSS templates
+    "UP017",   # datetime.UTC does not exist on Python 3.9/3.10
+    "UP037",   # quoted annotations are intentional for 3.9 compatibility
+    "SIM102",  # nested ifs are clearer in a couple of validators
+]
+
+[lint.per-file-ignores]
+"src/reporadar/webapp.py" = ["E501"]
+"tests/*" = ["E501"]

@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "C:\Users\tiwar\Downloads\reporadar\repodar.py", line 14, in <module>
+    from reporadar.cli import main  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tiwar\Downloads\reporadar\src\reporadar\cli.py", line 13, in <module>
+    from .config import Config
+  File "C:\Users\tiwar\Downloads\reporadar\src\reporadar\config.py", line 14, in <module>
+    from .security import clean_text, file_permissions_ok, redact
+  File "C:\Users\tiwar\Downloads\reporadar\src\reporadar\security.py", line 18, in <module>
+    import tempfile
+ModuleNotFoundError: No module named 'tempfile'
+24-11-2026 17:58:26.31 RepoRadar run complete 
+Traceback (most recent call last):
+  File "C:\Users\tiwar\Downloads\reporadar\repodar.py", line 14, in <module>
+    from reporadar.cli import main  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tiwar\Downloads\reporadar\src\reporadar\cli.py", line 13, in <module>
+    from .config import Config
+  File "C:\Users\tiwar\Downloads\reporadar\src\reporadar\config.py", line 14, in <module>
+    from .security import clean_text, file_permissions_ok, redact
+  File "C:\Users\tiwar\Downloads\reporadar\src\reporadar\security.py", line 18, in <module>
+    import tempfile
+ModuleNotFoundError: No module named 'tempfile'
+24-11-2026 17:58:34.08 RepoRadar run complete 

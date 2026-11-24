@@ -1,0 +1,38 @@
+# Secrets and local memory are NEVER part of the shipped package.
+.env
+.env.*
+!.env.example
+data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Generated output (safe to regenerate; commit it only on your own repo/Pages)
+site/feed.json
+site/feed.xml
+site/status.json
+site/archive/
+site/*.tmp
+
+# Python / tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
